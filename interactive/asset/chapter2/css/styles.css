@@ -1,0 +1,91 @@
+a:hover .icon {
+  transform: scale(1.5);
+}
+
+.option {
+  border-style: double;
+  border-color: beige;
+}
+
+#choicerow1 div:hover {
+  font-size: 130%;
+}
+
+#choicerow2 div:hover {
+  font-size: 130%;
+}
+
+#choicerow3 div:hover {
+  font-size: 130%;
+}
+
+#choicerow4 div:hover {
+  font-size: 130%;
+}
+
+#choicerow5 div:hover {
+  font-size: 130%;
+}
+
+#touch {
+  position: absolute;
+  left: 85%;
+}
+
+body {
+  background: rgb(218,218,105);
+  background: linear-gradient(0deg, rgba(218,218,105,1) 0%, rgba(145,144,77,1) 50%, rgba(136,147,20,1) 100%);
+}
+
+#protestor {
+  display: none;
+}
+
+#preacher {
+  display: none;
+}
+
+#after_res1 {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#letwin {
+  display: none;
+}
+
+#after_res2 {
+  display: none;
+}
+
+#after_res3 {
+  display: none;
+}
+
+#shoot {
+  display: none;
+}
+
+#noshoot {
+  display: none;
+}
+
+#carlson {
+  display: none;
+}
+
+.pic {
+  position: absolute;
+}
+
+.pic:hover {
+  opacity: 0;
+}
+
+#mute {
+  position: absolute;
+}
+

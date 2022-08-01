@@ -1,0 +1,67 @@
+body {
+  background: rgb(95,95,87);
+  background: linear-gradient(0deg, rgba(95,95,87,1) 0%, rgba(126,126,125,1) 50%, rgba(109,104,112,1) 100%);
+}
+
+a:hover .icon {
+  transform: scale(1.5);
+}
+
+#negotiate {
+  display: none;
+}
+
+.option {
+  border-style: double;
+  border-color: beige;
+}
+
+.liepic {
+  position: absolute;
+}
+
+.liepic:hover {
+  opacity: 0;
+}
+
+#choicerow2 div:hover {
+  font-size: 130%;
+}
+
+#choicerow1 div:hover {
+  font-size: 130%;
+}
+
+#blame {
+  display: none;
+}
+
+#reason {
+  display: none;
+}
+
+#lie {
+  display: none;
+}
+
+#truth {
+  display: none;
+}
+
+#after_res1 {
+  display: none;
+}
+
+#after_res2 {
+  display: none;
+}
+
+#touch {
+  position: absolute;
+  left: 85%;
+}
+
+#mute {
+  position: absolute;
+}
+

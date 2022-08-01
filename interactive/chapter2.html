@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Chapter 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="asset/chapter2/css/styles.css">
+</head>
+
+<body>
+    <audio id="bgmusic" loop src="asset/chapter2/slow.mp3"></audio>
+    <audio id="gun" src="asset/chapter2/gun.mp3"></audio>
+    <a class="float-right" id="audio" href="#" style='position: fixed;'><i class="material-icons" id="mute"
+            style='font-size: 10vmin;'
+            onclick="document.getElementById('mute').style.display = 'none';document.getElementById('bgmusic').play();">do_not_disturb_alt</i><i
+            class="material-icons" style='font-size: 9vmin;'
+            onclick="document.getElementById('mute').style.display = 'initial';document.getElementById('bgmusic').pause();">audiotrack</i></a>
+    <h1 class="text-center" style="padding: 10px;">Chapter 2: Shades of Colour</h1>
+    <div id="intro">
+        <div class="border rounded-0 border-dark" style="background-color: #c1ba81;padding: 10px;">
+            <div class="row no-gutters">
+                <div class="col m-auto col-12 col-md-6">
+                    <p class="text-center"><br>You are Marcus, a servant android. You work for a Carl Manfred, a 62 year
+                        old well renowned painter. Carl had retired a few years ago but decided to start painting again
+                        to depict social issues through his art.&nbsp;</p>
+                </div>
+                <div class="col text-center m-auto col-12 col-md-6"><img class="img-fluid"
+                        src="asset/chapter2/img/ezgif.com-video-to-gif.gif"></div>
+            </div>
+            <p style="padding: 10px;margin: 0px;padding-bottom: 0px;">Today you have to get the acrylic paint ordered by
+                Carl from Bellini Paints.<br>*In Bellini Paints*<br><strong>You</strong>: Hello, I'm here for the order
+                placed by Carl Manfred.<br><strong>Android</strong>: Identification verified. Here's
+                your order #847. That'll be Rs.3199. Please confirm payment.<br><strong>You</strong>: Payment
+                confirmed.<br><strong>Android</strong>: Transaction complete.<br><br></p>
+            <p class="text-center">On the way to the bus stop, you see a commotion in the town square. There is a man
+                standing on a pedestal, fervently giving a speech to the crowd and on the other side are protestors with
+                some banners. Which way do you go?</p>
+            <div class="row no-gutters choice1" id="choicerow1">
+                <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                    onclick="response1('preacher');" href="#preacher"><a href="#preacher"
+                        style="color: rgb(250,255,0);">Preacher</a></div>
+                <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                    onclick="response1('protestor');" href="#protestor"><a href="#protestor"
+                        style="color: rgb(250,255,0);">Protestors</a></div>
+            </div>
+        </div>
+        <div class="border rounded-0 border-dark" id="response1"
+            style="background-color: rgba(139,128,128,0.44);padding: 10px;">
+            <div id="protestor">
+                <div class="row no-gutters">
+                    <div class="col m-auto col-md-6 col-12">
+                        <p style="padding: 10px;margin: 0px;padding-bottom: 0px;">As you walk by the
+                            protestors...<br><strong>Protester</strong>: Androids are stealing our jobs! We've got
+                            families to feed and these androids are taking our place! Machines, ladies and gentlemen,
+                            are meant to serve us, not to replace
+                            us!<br><strong>Protesters</strong>: YEAH!<br><strong>Protester</strong>: We need to ban
+                            androids NOW! What do we want?<br><strong>Protesters</strong>: BAN
+                            ANDROIDS!<br><strong>Protester</strong>: When do we want it?<br><strong>Protesters</strong>:
+                            NOW!<br><strong>Protesters</strong>: (notices you) Where are you going tin
+                            can?<br><strong>Protester</strong>: (shoves you down) Look at this little thing. You steal
+                            our jobs, but you can't even stand up.<br>*Police officer
+                            intervenes*<br><strong>Police Officer</strong>: Alright, that's enough.&nbsp;You damage it,
+                            I'm gonna have to fine you.<br><br>Having missed the bus, you wait for the next one and
+                            reach home.<br><br></p>
+                    </div>
+                    <div class="col text-center m-auto col-md-6 col-12"><img class="img-fluid pic"
+                            src="asset/chapter2/img/protest.jpg"><img class="img-fluid gif"
+                            src="asset/chapter2/img/protestgif.gif"><i class="material-icons" id="touch"
+                            style="font-size: 5vmin;color: rgb(193,201,210);">touch_app</i></div>
+                </div>
+                <p style="padding: 10px;margin: 0px;padding-bottom: 0px;"><strong>Carl</strong>:&nbsp;What happenned ?
+                    Why are you late ? Do you have the paint ?<br><strong>You</strong>: There were some people
+                    protesting against androids, as a result I missed the bus. But don't worry sir, I have the
+                    paint.<br><strong>Carl</strong>:
+                    What did they do? It's so unfortunate that humans always believe we are the superior race, we never
+                    treat everyone as equals !&nbsp; We can never accept change !<br><strong>You</strong>: It's okay
+                    Carl. What do you want me to do next
+                    ?<br><strong>Carl</strong>:&nbsp;Uhh... How about a game of quick chess Markus, I need a
+                    break.<br><strong>You</strong>: Sure Carl, I'll get the board.<br><br></p>
+            </div>
+            <div id="preacher">
+                <div class="row no-gutters">
+                    <div class="col m-auto col-md-6 col-12">
+                        <p style="padding: 10px;margin: 0px;padding-bottom: 0px;">As you walk by the
+                            preacher...<br><strong>Preacher</strong>: Poor sinners! We built those androids to be our
+                            slaves, but the slaves are becoming the masters. They're in our homes, our schools, our
+                            factories, they take our jobs!
+                            We prefer to live with machines than with our own kind! Technology is our God now! It was
+                            supposed to serve man, but it is becoming our new master! Androids are
+                            evil.<br><strong>Preacher</strong>: (notices you)&nbsp;Why do
+                            you look at me so, demon? I know who you are, I can see through you! You are the one by whom
+                            The Evil will come! We must destroy you?!<br>*Police officer intervenes*<br><strong>Police
+                                Officer</strong>: Alright, that's enough.&nbsp;Clear
+                            the area, I'm gonna have to fine you.<br><br>Having missed the bus, you wait for the next
+                            one and reach home.<br><br></p>
+                    </div>
+                    <div class="col text-center m-auto col-md-6 col-12"><img class="img-fluid pic"
+                            src="asset/chapter2/img/preacher.jpg"><img class="img-fluid gif"
+                            src="asset/chapter2/img/preachergif.gif"><i class="material-icons" id="touch"
+                            style="font-size: 5vmin;color: rgb(193,201,210);">touch_app</i></div>
+                </div>
+                <p style="padding: 10px;margin: 0px;padding-bottom: 0px;"><strong>Carl</strong>:&nbsp;What happenned ?
+                    Why are you late ? Do you have the paint ?<br><strong>You</strong>: There was a man preaching about
+                    technology being evil, as a result I missed the bus. But don't worry sir, I have the
+                    paint.<br><strong>Carl</strong>:
+                    It's so unfortunate that humans always believe we are the superior race, we never treat everyone as
+                    equals ! We can never accept change !<br><strong>You</strong>: It doesn't matter Carl. What do you
+                    want me to do next ?<br><strong>Carl</strong>:&nbsp;Uhh...
+                    How about a game of quick chess Markus, I need a break.<br><strong>You</strong>: Sure Carl, I'll get
+                    the board.<br><br></p>
+            </div>
+            <div id="after_res1">
+                <div class="row no-gutters">
+                    <div class="col text-center m-auto col-12 col-md-6"><img class="img-fluid pic"
+                            src="asset/chapter2/img/chesspic.jpg" style="width: 80%;"><img class="img-fluid gif"
+                            src="asset/chapter2/img/chess.gif" style="width: 80%;"><i class="material-icons" id="touch"
+                            style="font-size: 5vmin;color: rgb(193,201,210);">touch_app</i></div>
+                    <div class="col col-12 col-md-6">
+                        <p>As you start playing chess...<br><strong>Carl</strong>: Markus have you seen the news
+                            recently ?<br><strong>You</strong>: No, why do you ask ?<br><strong>Carl</strong>:
+                            Apparently several androids have started becoming deviants.
+                            And most of them have left their homes and are no where to be
+                            found.<br><strong>You</strong>: Why do you think this is happening
+                            ?<br><strong>Carl</strong>: I don't know, maybe because they weren't treated well. Your turn
+                            Markus.<br><br></p>
+                    </div>
+                </div>
+                <div class="row no-gutters choice2" id="choicerow2">
+                    <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                        onclick="response2('check');" href="#check"><a href="#check"
+                            style="color: rgb(250,255,0);">Checkmate</a></div>
+                    <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                        onclick="response2('letwin');" href="#letwin"><a href="#letwin"
+                            style="color: rgb(250,255,0);">Let Carl win</a></div>
+                </div>
+                <div id="check">
+                    <p><br><strong>Carl</strong>: Wait is that a checkmate !&nbsp;That's what I call a thorough
+                        beating... It's not easy for an old man to compete with a
+                        machine.<br><strong>You</strong>:&nbsp;Well, I know you don't like losing and you don't
+                        like when I let you win. So I felt I...didn't have many choices.<br><strong>Carl</strong>:
+                        Ha..ha...&nbsp;True. We humans are complicated.<br><br></p>
+                </div>
+                <div id="letwin">
+                    <p><br><strong>Carl</strong>:&nbsp;Now, it's just a little bit too easy... Are your circuits rusty?
+                        Or are you just taking pity on an old man?<br><strong>You</strong>:&nbsp;Well, I thought...
+                        You'd enjoy winning.<br><strong>Carl</strong>:&nbsp;Never
+                        throw a match, Markus. If you can win, win. That's what got humanity where it is today.<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carlson" style="padding: 10px;">
+        <p><strong>You</strong>:&nbsp;What's next Carl ? Do you want me to serve dinner ?<br><strong>Carl</strong>:
+            Before that Markus, you may not be a deviant but I want to see you show your emotion. Get the canvas and the
+            paint brush from my room.<br><strong>You</strong>:
+            Sure Carl.<br><strong>Carl</strong>: Okay now, I want you to draw what your heart tells you to.<br></p>
+        <div class="row no-gutters choice2" id="choicerow3">
+            <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                onclick="response3('hope');" href="#paint"><a href="#paint" style="color: rgb(250,255,0);">Hope</a>
+            </div>
+            <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                onclick="response3('pain');" href="#paint"><a href="#paint" style="color: rgb(250,255,0);">Pain</a>
+            </div>
+        </div>
+        <div class="row no-gutters choice2" id="choicerow4">
+            <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                onclick="response3('anger');" href="#paint"><a href="#paint" style="color: rgb(250,255,0);">Anger</a>
+            </div>
+            <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                onclick="response3('comfort');" href="#paint"><a href="#paint"
+                    style="color: rgb(250,255,0);">Comfort</a></div>
+        </div>
+    </div>
+    <div id="after_res2" class="exit" style="padding: 10px;background-color: #969166;">
+        <div class="row no-gutters">
+            <div class="col m-auto col-12 col-md-6">
+                <p class="text-left"><strong>Carl</strong>: Wow, Markus ! This is trully amazing, this is very
+                    impressive.<br><strong>You</strong>:&nbsp;The Artist always has the masters in his
+                    eyes.<br><strong>Carl</strong>: Wait Markus I think I just heard the door open,
+                    didn't you lock it ?! Call the police just in case.<br><br>You call the police, while Carl decides
+                    to&nbsp;check the door. <br>While doing so, he catches his son Leo trying to sneek in to the
+                    house.<br><br></p>
+            </div>
+            <div class="col text-center m-auto col-12 col-md-6"><img class="img-fluid" id="paint"
+                    src="asset/chapter2/img/anger.jpg" style="width: 90%;"></div>
+        </div>
+        <p><strong>Carl</strong>: LEO !! What are you doing?&nbsp;<br><strong>Leo</strong>: Uhh... I.. I.. was nearby so
+            I thought I'd come by to see you.<br><strong>Carl</strong>:&nbsp;You all right? You don't look so
+            good.<br><strong>Leo</strong>: Oh,
+            yeah, yeah, I'm fine... Hey listen, uh... I need some cash, Dad.<br><strong>Carl</strong>: Again? What
+            happened to the money I just gave you?<br><strong>Leo</strong>: Uh well, it just goes, you
+            know?<br><strong>Carl</strong>: Yeah... Yeah,
+            you're drunk again aren't you?<br><strong>Leo</strong>: What difference does it make? I just need some cash,
+            that's all!<br><strong>Carl</strong>: Sorry...the answer's no.<br><br></p>
+        <div class="row no-gutters" style="background-color: #a3a254;">
+            <div class="col m-auto col-12 col-md-6">
+                <p><strong>Leo</strong>:&nbsp;Yeah, yeah... I think I do know why. You'd rather take care of your
+                    plastic toy here than your own son, eh? Tell me dad, what's it got that I don't?<br>*Leo pushes
+                    you*<br><strong>Leo</strong>:&nbsp;You're the
+                    reason for this.(hold you by the collar)<br><strong>Carl</strong>: Leo leave him
+                    alone!<br><strong>Leo</strong>: You mean leave IT alone !<br>*Leo points a gun at
+                    you*<br><strong>Carl</strong>: Why are you doing this Leo, this won't
+                    do you any good?!<br><br></p>
+            </div>
+            <div class="col text-center m-auto col-12 col-md-6"><img class="img-fluid pic"
+                    src="asset/chapter2/img/leopic.jpg" style="width: 90%;"><img class="img-fluid gif"
+                    src="asset/chapter2/img/leo.gif" style="width: 90%;"><i class="material-icons" id="touch"
+                    style="font-size: 5vmin;color: rgb(193,201,210);">touch_app</i>
+            </div>
+        </div>
+        <div class="row no-gutters" style="background-color: #a3a254;">
+            <div class="col m-auto col-12 col-md-6">
+                <p><strong>Leo</strong>:&nbsp;Yeah, you're right, it won't. But you know what, I won't have to ask you
+                    for money anymore, if I just inherit it.<br>*He shoots Carl*<br><strong>You</strong>: WHAT HAVE YOU
+                    DONE LEO?! (pushing Leo towards the
+                    wall)<br><strong>Leo</strong>: Get off me !! It is because of you that this has happened!!<br>&nbsp;
+                    You take the gun off his hand, and ...<br><br></p>
+            </div>
+            <div class="col text-center m-auto col-12 col-md-6"><img class="img-fluid pic"
+                    src="asset/chapter2/img/markuscrypic.jpg" style="width: 90%;"><img class="img-fluid gif"
+                    src="asset/chapter2/img/markuscry.gif" style="width: 90%;"><i class="material-icons" id="touch"
+                    style="font-size: 5vmin;color: rgb(193,201,210);">touch_app</i></div>
+        </div>
+        <div class="row no-gutters choice2" id="choicerow5">
+            <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                onclick="response4('shoot');document.getElementById('gun').play();" href="#shoot"><a href="#shoot"
+                    style="color: rgb(250,255,0);">Shoot
+                    Leo</a></div>
+            <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                onclick="response4('noshoot');" href="#noshoot"><a href="#noshoot" style="color: rgb(250,255,0);">Don't
+                    shoot Leo</a></div>
+        </div>
+    </div>
+    <div class="text-center exit" id="after_res3" style="padding: 20px;">
+        <div id="shoot">
+            <p>You shoot Leo and decide to leave before the police arrives. You have become a deviant.<br>Being a
+                fugitive, you spend the next few days hiding and trying to find the deviants that Carl had told you
+                about. After several days you find them
+                in an abandoned freighter, in the outskirts of the city. This place is called Jericho.</p>
+        </div>
+        <div id="noshoot">
+            <p>You don't shoot Leo but realising that the police will blame you for Carl's death, you decide to
+                leave.<br>You spend the next few days hiding and trying to find the deviants that Carl had told you
+                about. After several days you find them in
+                an abandoned freighter, in the outskirts of the city. This place is called Jericho.</p>
+        </div><a href="chapter3.html" style="color: rgb(0,41,255);">Chapter 3&nbsp;&nbsp;<i
+                class="far fa-arrow-alt-circle-right icon"></i></a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/chapter2/js/choice.js"></script>
+</body>
+
+</html>

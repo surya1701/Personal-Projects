@@ -1,0 +1,99 @@
+a:hover .icon {
+  transform: scale(1.5);
+}
+
+.option {
+  border-style: double;
+  border-color: beige;
+}
+
+#choicerow1 div:hover {
+  font-size: 130%;
+}
+
+#choicerow2 div:hover {
+  font-size: 130%;
+}
+
+#choicerow3 div:hover {
+  font-size: 130%;
+}
+
+#choicerow4 div:hover {
+  font-size: 130%;
+}
+
+#choicerow5 div:hover {
+  font-size: 130%;
+}
+
+#touch {
+  position: absolute;
+  left: 85%;
+}
+
+.pic {
+  position: absolute;
+}
+
+.pic:hover {
+  opacity: 0;
+}
+
+body {
+  background: rgb(113,235,153);
+  background: linear-gradient(0deg, rgba(113,235,153,1) 0%, rgba(190,247,100,1) 50%, rgba(96,173,97,1) 100%);
+}
+
+#truth {
+  display: none;
+}
+
+#androids {
+  display: none;
+}
+
+#humans {
+  display: none;
+}
+
+#end {
+  display: none;
+}
+
+#lie {
+  display: none;
+}
+
+#after_res2 {
+  display: none;
+}
+
+#after_res1 {
+  display: none;
+}
+
+#steal {
+  display: none;
+}
+
+#riot {
+  display: none;
+}
+
+#threaten {
+  display: none;
+}
+
+#comfort {
+  display: none;
+}
+
+#credits {
+  bottom: 5px;
+}
+
+#mute {
+  position: absolute;
+}
+

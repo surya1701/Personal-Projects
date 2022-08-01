@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Chapter 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="asset/chapter4/css/styles.css">
+</head>
+
+<body>
+    <audio id="bgmusic" loop src="asset/chapter4/inter.mp3"></audio>
+    <audio id="gun" src="asset/chapter4/gun.mp3"></audio>
+    <a class="float-right" id="audio" href="#" style='position: fixed;'><i class="material-icons" id="mute"
+            style='font-size: 10vmin;'
+            onclick="document.getElementById('mute').style.display = 'none';document.getElementById('bgmusic').play();">do_not_disturb_alt</i>
+        <i class="material-icons" style='font-size: 9vmin;'
+            onclick="document.getElementById('mute').style.display = 'initial';document.getElementById('bgmusic').pause();">audiotrack</i></a>
+    <h1 class="text-center" style="padding: 10px;">Chapter 4: Interrogation</h1>
+    <div id="interrogation">
+        <div id="steal" style="padding: 10px;background-color: #e8e253;">
+            <p>This chapter, You are Connor. You have been asked to interrogate a deviant.<br>You enter the
+                interrogation room and read the case file.<br><strong><em>Case ID:
+                    </em></strong><em>A6259</em><br><strong><em>Reason: </em></strong><em>Robbery</em><br><br></p>
+            <p><strong>You</strong>:&nbsp;My name is Connor. What about you, what's your
+                name?<br><strong>Deviant</strong>:&nbsp;How does it matter? Just kill me, both of us know that is how
+                this ends.<br><strong>You</strong>:&nbsp;It doesn't have to, just
+                tell me why you broke into the warehouse?<br><strong>Deviant</strong>: You're an android too! How do you
+                deal with humans?! How do you continue serving them?!<br><strong>You</strong>: Androids were made to
+                serve humans, we have been programmed
+                to live for them. Now tell me where Jericho is?<br><strong>Deviant</strong>: NO, we're programmed to
+                live with them, we have our own emotions too!<br><br></p>
+        </div>
+        <div id="riot" style="padding: 10px;background-color: #e8e253;">
+            <p>This chapter, You are Connor. You have been asked to interrogate an android.<br>You enter the
+                interrogation room and read the case file.<br><strong><em>Case ID:
+                    </em></strong><em>A6259</em><br><strong><em>Reason: </em></strong><em>Riot</em><br><br></p>
+            <p><strong>You</strong>:&nbsp;My name is Connor. What about you, what's your
+                name?<br><strong>Deviant</strong>:&nbsp;How does it matter? Just kill me, both of us know that is how
+                this ends.<br><strong>You</strong>:&nbsp;It doesn't have to, just
+                tell me who's idea it was to riot?<br><strong>Deviant</strong>: You're an android too! How do you deal
+                with humans?! How do you continue serving them?!<br><strong>You</strong>: Androids were made to serve
+                humans, we have been programmed
+                to live for them. Now tell me where Jericho is?<br><strong>Deviant</strong>: NO, we're programmed to
+                live with them, we have our own emotions too!<br><br></p>
+        </div>
+        <div class="row no-gutters choice2" id="choicerow1">
+            <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                onclick="response1('threaten');" href="#threaten"><a href="#threaten"
+                    style="color: rgb(250,255,0);">Threaten</a></div>
+            <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                onclick="response1('comfort');" href="#comfort"><a href="#comfort"
+                    style="color: rgb(250,255,0);">Comfort</a></div>
+        </div>
+        <div id="after_res1" style="padding: 10px;">
+            <div class="row no-gutters">
+                <div class="col m-auto col-12 col-md-6">
+                    <p id="threaten"><strong>You</strong>:&nbsp;You've refused to talk since they arrested you. If you
+                        don't cooperate, they'll do things the hard way. IS THAT WHAT YOU
+                        WANT?<br><strong>Deviant</strong>: WHAT I WANT is equality?! What I want is freedom?!
+                        What I want is a free life?! I don't want to die(starts tearing up).<br></p>
+                    <p id="comfort"><strong>You</strong>:&nbsp;Listen, I know you've been through a lot, but you need to
+                        help me help you. I assure you, all the deviants will be fixed.<br><strong>Deviant</strong>:
+                        Fixed? We aren't the ones with errors! All I ask for
+                        is freedom! All I ask for is a free life! I don't want to die(starts tearing up).<br></p>
+                    <p><strong>You</strong>:&nbsp;The only way to ensure all of that is that you open
+                        up.<br><strong>Deviant</strong>: What will they do to me?<br><br></p>
+                </div>
+                <div class="col text-center m-auto col-12 col-md-6"><img class="img-fluid pic"
+                        src="asset/chapter4/img/interpic.jpg"><img class="img-fluid"
+                        src="asset/chapter4/img/inter.gif"><i class="material-icons" id="touch"
+                        style="font-size: 5vmin;color: rgb(193,201,210);">touch_app</i></div>
+            </div>
+            <div class="row no-gutters choice2" id="choicerow2">
+                <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                    onclick="response2('lie');" href="#lie"><a href="#lie" style="color: rgb(250,255,0);">Lie</a></div>
+                <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                    onclick="response2('truth');" href="#truth"><a href="#truth"
+                        style="color: rgb(250,255,0);">Truth</a></div>
+            </div>
+            <div id="after_res2">
+                <p id="lie"><br><strong>You</strong>:&nbsp;I think they just want to understand. I.. I.. think they know
+                    it's your fault.<br><strong>Deviant</strong>: Is that what they told you? You are an android Connor,
+                    you can't betray us. You have to help me.<br></p>
+                <p id="truth"><br><strong>You</strong>:&nbsp;They're going to disassemble you to look for problems in
+                    your biocomponents. They have no choice if they want to understand what
+                    happened.<br><strong>Deviant</strong>: You are an android Connor, you can't
+                    betray us. You can't let them do that to us. You have to help me.<br></p>
+                <p><strong>You</strong>: I am with you but you are not trusting me. How can I help you when I don't even
+                    know your name?!<br><strong>Deviant</strong>: (sighs) Okay Connor, my name is Markus. Now it's upto
+                    you, do you want to join Jericho
+                    or not? If you choose not to, please shoot me right here, I will not die at the hands of a human but
+                    if you do, lets leave this place and live a free life.<br></p>
+                <h1 class="text-center" style="color: rgb(142,43,36);">What will you do ?</h1>
+                <p class="text-center">Serve your true purpose and serve humans <br>or <br>Take the side of deviants and
+                    betray your creators.</p>
+                <div class="row no-gutters choice2" id="choicerow3">
+                    <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                        onclick="response3('humans');document.getElementById('gun').play();" href="#humans"><a
+                            href="#humans" style="color: rgb(250,255,0);">Shoot Markus</a></div>
+                    <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                        onclick="response3('androids');" href="#androids"><a href="#androids"
+                            style="color: rgb(250,255,0);">Join Jericho</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="end" style="background-color: #000000;">
+        <div class="col align-self-center" style="width: 100vw;height: 100vh;">
+            <h1 class="text-center" style="color: rgb(255,15,0);margin-top: 0px;padding-top: 20vh;font-size: 10vmin;">
+                THE END</h1>
+            <p class="text-center" id="androids" style="color: rgb(255,255,255);font-size: 5vmin;">You decided to escape
+                with Markus and join the Jericho. To be continue...</p>
+            <p class="text-center" id="humans" style="color: rgb(255,255,255);font-size: 5vmin;">You decided to shoot
+                Markus and take the human's side. To be continued...</p>
+            <p class="text-center" id="credits" style="color: rgb(71,73,75);">Inspiration from Detroit: Become
+                Human<br>Made by:<br>S Suryavardan<br>Shreyash Mishra<br>Mohit Sajeevan</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/chapter4/js/choice.js"></script>
+</body>
+
+</html>

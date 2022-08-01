@@ -1,0 +1,25 @@
+body {
+  background: rgb(209,203,87);
+  background: linear-gradient(0deg, rgba(209,203,87,1) 0%, rgba(200,178,89,1) 50%, rgba(200,157,47,1) 100%);
+}
+
+p {
+  padding: 10px;
+}
+
+.connor:hover {
+  opacity: 0;
+}
+
+.connor {
+  position: absolute;
+}
+
+a:hover .icon {
+  transform: scale(1.5);
+}
+#touch {
+  position: absolute;
+  left: 85%;
+}
+

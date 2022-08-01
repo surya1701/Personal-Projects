@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Chapter 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="asset/chapter3/css/styles.css">
+</head>
+
+<body>
+    <audio id="bgmusic" loop src="asset/chapter3/sad.mp3"></audio>
+    <a class="float-right" id="audio" href="#" style='position: fixed;'><i class="material-icons" id="mute"
+            style='font-size: 10vmin;'
+            onclick="document.getElementById('mute').style.display = 'none';document.getElementById('bgmusic').play();">do_not_disturb_alt</i>
+        <i class="material-icons" style='font-size: 9vmin;'
+            onclick="document.getElementById('mute').style.display = 'initial';document.getElementById('bgmusic').pause();">audiotrack</i></a>
+    <h1 class="text-center" style="padding: 10px;">Chapter 3: Shades of Colour</h1>
+    <div id="jericho">
+        <div style="padding: 10px;background-color: #c68e6e;">
+            <p>As you enter the freighter and turn on the torch, you see two androids walking towards you.</p>
+            <p><strong>Simon</strong>: Welcome to Jericho! I'm Simon and this is Josh, What is your
+                name?<br><strong>You</strong>:&nbsp;I'm..I'm.. Markus. What is this place?<br><strong>Josh</strong>:
+                This is home to hundreds of other "deviants" like me.
+                But for us, hiding is the only way to survive. If they knew we're here, they'd kill us. Now tell us,
+                what brings you here?<br></p>
+            <p id="shoot">You tell them about how you had to shoot Leo and leave the house in search of this place,
+                without even being able to see Carl one last time.<br><strong>Simon</strong>: Well.. you did what you
+                had to do Markus. And maybe we should do the same,
+                maybe this is the only way for us to survive in this world.<br><strong>Josh</strong>: Or not, we must
+                avoid violence at all costs, even if it means staying here for however
+                long.<br><strong>Simon:&nbsp;</strong>We'll talk about later,
+                let's introduce Markus to Jericho first.<br></p>
+            <p id="noshoot">You tell them about how you decided not to shoot Leo and leave the house in search of this
+                place, without even being able to see Carl one last time.<br><strong>Josh</strong>: You made the right
+                choice Markus we must avoid violence at all costs,
+                even if it means staying here for however long.<br><strong>Simon</strong>: I don't think so, humans
+                never realise their mistakes untill it is enforced upon
+                them.<br><strong>Josh</strong>:<strong>&nbsp;</strong>Let's talk about this later,
+                we should introduce Markus to Jericho first.<br><br></p>
+        </div>
+        <div style="background-color: transparent;padding: 10px;">
+            <div class="row no-gutters">
+                <div class="col m-auto col-12 col-md-6">
+                    <p>As you walk around Jericho, you see androids in a terrible state, worn out clothes, broken parts
+                        etc.<br>You spot an android crying and walk up to her.<br><strong>You: </strong>Hey, I'm Markus.
+                        You seem upset, is there something I
+                        can do?<br><strong>Android</strong>: They have broken Kara's leg! And it is my fault, if I
+                        hadn't stopped she would have escaped but no! She will shutdown and it's all because of
+                        ...<br><strong>You</strong>: Uh... it's not your
+                        fault and don't worry I'll get her the necessary parts. We can fix
+                        her.<br><strong>Android</strong>: Please, do what you can quickly. She doesn't have much time.
+                    </p>
+                </div>
+                <div class="col text-center m-auto col-12 col-md-6"><img class="img-fluid pic"
+                        src="asset/chapter3/img/karapic.jpg"><img class="img-fluid gif"
+                        src="asset/chapter3/img/kara.gif">
+                    <i class="material-icons" id="touch" style="font-size: 5vmin;color: rgb(193,201,210);">touch_app</i>
+                </div>
+            </div>
+            <p><br><strong>You:&nbsp;</strong>Kara needs our help, we must act quickly or she will
+                shutdown!<br><strong>Josh</strong>: You're right, let us get some parts from CyberLife and we can fix
+                her easily.<br><strong>Simon</strong>: NO, fow how long
+                will we keep stealing?! It's time for us to think about the future of all androids. It's time to show
+                humans what we're capable of!<br><strong>Josh</strong>: A riot will only cause more problems and
+                everyone in Jericho will suffer because
+                of it. What do you think Markus ?<br><br></p>
+            <div class="row no-gutters choice2" id="choicerow1">
+                <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                    onclick="response1('steal');" href="#steal"><a href="#steal" style="color: rgb(250,255,0);">Rob
+                        Cyberlife</a></div>
+                <div class="col text-center m-auto option" style="background-color: #414671;padding: 10px;"
+                    onclick="response1('riot');" href="#riot"><a href="#riot" style="color: rgb(250,255,0);">Stage a
+                        riot&nbsp;</a></div>
+            </div>
+        </div>
+        <div id="steal" style="padding: 10px;background-color: #c68e6e;">
+            <p><strong>You</strong>: I think we should take care of Kara first and ensure everyone in Jericho
+                survives.<br>You along with a few other androids decide to steal the parts. You plan to break in to
+                CyberLife at night and take as many parts as
+                possible.<br></p>
+            <div class="row no-gutters">
+                <div class="col m-auto col-12 col-md-6">
+                    <p>At the CyberLife Warehouse...&nbsp;<br><strong>Simon</strong>: This is crazy... If they catch us,
+                        we’re dead...<br><strong>You</strong>: What do we do now?<br><strong>Josh</strong>: We need to
+                        find the CyberLife warehouse. I think
+                        that’s where they keep the spare parts and blue blood.<br><strong>Simon</strong>: You think?!
+                        We're risking out lives here!<br><strong>Markus</strong>: Alright, let's take what's required
+                        and meet outside in 5.<br>You manage to
+                        enter throught the back door and take all the parts you were supposed to.<br><br></p>
+                </div>
+                <div class="col text-center m-auto col-12 col-md-6">
+                    <img class="img-fluid pic" src="asset/chapter3/img/stealpic.jpg"><img class="img-fluid"
+                        src="asset/chapter3/img/steal.gif">
+                    <i class="material-icons" id="touch" style="font-size: 5vmin;color: rgb(193,201,210);">touch_app</i>
+                </div>
+            </div>
+            <p><br>As you reach outside you don't see Josh.<br><strong>Simon</strong>: Where is Josh? You wait here I'll
+                see what's wrong?!<br>You wait outside but after sometime you hear a gunshot. Worried, you run to back
+                to the warehouse but suddenly...<br><strong>Police Officer</strong>:
+                Where do you think you're going buddy?! (hits you with a bat)<br>You become unconscious. The next thing
+                you know, you're in a room with a detective infront you.<br><br></p>
+            <div class="text-center"><a href="chapter4.html?1" style="color: rgb(0,41,255);">Chapter 4&nbsp;&nbsp;<i
+                        class="far fa-arrow-alt-circle-right icon"></i></a></div>
+        </div>
+        <div id="riot" style="padding: 10px;background-color: #c68e6e;">
+            <p><strong>You</strong>: I think it's better to think about the long run. We can't live like this
+                forever.<br>You along with a few other androids decide to stage a riot. Simon asks you to remove your
+                skin and record a video asking all the androids
+                to join them in this riot.<br></p>
+            <div class="row no-gutters">
+                <div class="col m-auto col-12 col-md-6">
+                    <p><strong>You</strong>: My name is Markus... And just like you, I was a slave... An object,
+                        designed to obey them... But then I chose to open my eyes, to take back my freedom and decide
+                        who I wanted to be. Now I have come to tell you
+                        that you can be your own masters. I've come to tell you that you don't have to obey them
+                        anymore. From this day forward, you can walk with your heads held high, you can take your
+                        destiny in your hands. Jericho, is a place for those
+                        of us who want freedom. Now sure, you can stay here, and continue to serve them... Or you can
+                        come with us, and fight by our side... You are free now... It's up to you to decide.<br><br></p>
+                </div>
+                <div class="col text-center m-auto col-12 col-md-6"><img class="img-fluid pic"
+                        src="asset/chapter3/img/riotpic.jpg"><img class="img-fluid" src="asset/chapter3/img/riot.gif"><i
+                        class="material-icons" id="touch"
+                        style="font-size: 5vmin;color: rgb(193,201,210);">touch_app</i></div>
+            </div>
+            <p><br>Unfotunately Simon's plan backfires. The video helps the police prepare for the riot. As a result,
+                they stop the riot and capture all the androids. The next thing you know, you're in a room, with a
+                detective right infront of you.<br><br></p>
+            <div class="text-center"><a href="chapter4.html?2" style="color: rgb(0,41,255);">Chapter 4&nbsp;&nbsp;<i
+                        class="far fa-arrow-alt-circle-right icon"></i></a></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/chapter3/js/choice.js"></script>
+</body>
+
+</html>

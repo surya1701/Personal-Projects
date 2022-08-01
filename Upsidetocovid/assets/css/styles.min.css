@@ -1,0 +1,19 @@
+body{background-color: #aee7fd;transition: ease-in-out;}.set-height{align-items: center;}h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#f22626, #ff00f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  a {
+      color: #f22626;
+  }
+  .text-center{
+      text-align: center !important;
+  }
+  .nav-link:hover {
+      transform: scale(1.2);
+  }
+  #down:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+  }

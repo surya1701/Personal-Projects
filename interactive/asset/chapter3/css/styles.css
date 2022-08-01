@@ -1,0 +1,67 @@
+a:hover .icon {
+  transform: scale(1.5);
+}
+
+.option {
+  border-style: double;
+  border-color: beige;
+}
+
+#choicerow1 div:hover {
+  font-size: 130%;
+}
+
+#choicerow2 div:hover {
+  font-size: 130%;
+}
+
+#choicerow3 div:hover {
+  font-size: 130%;
+}
+
+#choicerow4 div:hover {
+  font-size: 130%;
+}
+
+#choicerow5 div:hover {
+  font-size: 130%;
+}
+
+#touch {
+  position: absolute;
+  left: 85%;
+}
+
+.pic {
+  position: absolute;
+}
+
+.pic:hover {
+  opacity: 0;
+}
+
+#steal {
+  display: none;
+}
+
+#riot {
+  display: none;
+}
+
+#shoot {
+  display: none;
+}
+
+#noshoot {
+  display: none;
+}
+
+body {
+  background: rgb(117,211,222);
+  background: linear-gradient(0deg, rgba(117,211,222,1) 0%, rgba(89,177,198,1) 50%, rgba(68,181,204,1) 100%);
+}
+
+#mute {
+  position: absolute;
+}
+

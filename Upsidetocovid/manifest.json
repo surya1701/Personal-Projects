@@ -1,0 +1,21 @@
+{
+    "short_name": "Upside to covid",
+    "name": "Upside to Covid",
+    "icons": [
+        {
+            "src": "assets/img/rm208batch7-adj-08.png",
+            "type": "image/png",
+            "sizes": "undefinedxundefined"
+        },
+        {
+            "src": "assets/img/rm208batch7-adj-08.png",
+            "type": "image/png",
+            "sizes": "undefinedxundefined"
+        }
+    ],
+    "start_url": "index.html",
+    "background_color": "#00feff",
+    "theme_color": "#3dff00",
+    "display": "fullscreen",
+    "orientation": "portrait"
+}
