@@ -1,0 +1,64 @@
+body {
+    background: #faf8f4;
+}
+
+.intro-screen {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7f7,
+            #fffdf8
+        );
+}
+
+.video-card {
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: transform .25s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.03);
+}
+
+.video-card img {
+    width: 100%;
+    display: block;
+}
+
+.play-overlay {
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    transition: opacity .25s ease;
+}
+
+.video-card:hover .play-overlay {
+    opacity: 1;
+}
+
+.play-icon {
+    font-size: 4rem;
+    color: white;
+}
