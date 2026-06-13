@@ -1,12 +1,17 @@
 const INTRO_VIDEO_ID = "HmiEA8tpo7A";
 
 const videos = [
-    "HmiEA8tpo7A",
-    "HmiEA8tpo7A",
-    "HmiEA8tpo7A",
-    "HmiEA8tpo7A",
-    "HmiEA8tpo7A",
-    "HmiEA8tpo7A"
+    "ze4m1Ymalf0",
+    "Y2KAnkYQN_Q",
+    "VZ_u73-Gzf0",
+    "TZYuBjYNcJU",
+    "DD9J-gy_QfQ",
+    "LscLhAhkbGI",
+    "IfERNNYnswU",
+    "gpX_3jIGmMI",
+    "DD9J-gy_QfQ",
+    "s_Ic92yHakI",
+    "dbq2PwrBf7k"
 ];
 
 const introModal =
@@ -50,7 +55,7 @@ startBtn.addEventListener("click", () => {
             behavior: "smooth"
         });
 
-    }, 20000);
+    }, 5000);
 
 });
 
