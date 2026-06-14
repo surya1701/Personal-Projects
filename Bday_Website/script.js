@@ -24,7 +24,6 @@ const videos = shuffle([
     "VZ_u73-Gzf0",
     "TZYuBjYNcJU",
     "DD9J-gy_QfQ",
-    "ra2Lwhv1oR8",
     "LscLhAhkbGI",
     "IfERNNYnswU",
     "R322Xv8wHq4",
