@@ -62,6 +62,9 @@ document
     .addEventListener("click", () => {
 
         showGallery();
+        gallerySection.scrollIntoView({
+            behavior: "smooth"
+        });
     });
 
 document
