@@ -1,3 +1,18 @@
+function shuffle(array) {
+  // Create a copy so we don't mutate the original array
+  const shuffled = [...array]; 
+  
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    // Pick a random index from 0 to i
+    const j = Math.floor(Math.random() * (i + 1));
+    
+    // Swap elements array[i] and array[j]
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  
+  return shuffled;
+}
+
 const INTRO_VIDEO_ID = "ID862Q3iRxY";
 
 const videos = shuffle([
@@ -22,7 +37,7 @@ const videos = shuffle([
     "mz5T2uhtjUY",
     "DjBwMPb-tGg"
 ]);
-colors.push("dbq2PwrBf7k");
+videos.push("dbq2PwrBf7k");
 
 let galleryShown = false;
 
