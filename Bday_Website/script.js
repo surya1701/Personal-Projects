@@ -1,20 +1,61 @@
 const INTRO_VIDEO_ID = "HmiEA8tpo7A";
 
-const videos = [
+const videos = shuffle([
     "ze4m1Ymalf0",
     "Y2KAnkYQN_Q",
     "jyMBetM7aKc",
+    "ra2Lwhv1oR8",
+    "EuuQx2O9T1U",
     "VZ_u73-Gzf0",
     "TZYuBjYNcJU",
     "DD9J-gy_QfQ",
     "ra2Lwhv1oR8",
     "LscLhAhkbGI",
     "IfERNNYnswU",
+    "R322Xv8wHq4",
     "gpX_3jIGmMI",
     "FhMMW3SO-Wk",
     "s_Ic92yHakI",
-    "dbq2PwrBf7k"
-];
+    "U6EIMPI8ov0",
+    "FX-DmCxSJak",
+    "iI6_5bLTRcU",
+    "mz5T2uhtjUY",
+    "DjBwMPb-tGg"
+]);
+colors.push("dbq2PwrBf7k");
+
+let galleryShown = false;
+
+function showGallery() {
+
+    if (galleryShown) return;
+
+    galleryShown = true;
+
+    gallerySection.classList.remove("d-none");
+
+    gallerySection.scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+document
+    .getElementById("scrollBtn")
+    .addEventListener("click", () => {
+
+        showGallery();
+    });
+
+document
+    .getElementById("closeIntroBtn")
+    .addEventListener("click", () => {
+
+        introModal.hide();
+
+        introFrame.src = "";
+
+        showGallery();
+    });
 
 const introModal =
     new bootstrap.Modal(
@@ -51,11 +92,9 @@ startBtn.addEventListener("click", () => {
 
         introModal.hide();
 
-        gallerySection.classList.remove("d-none");
+        introFrame.src = "";
 
-        gallerySection.scrollIntoView({
-            behavior: "smooth"
-        });
+        showGallery();
 
     }, 5000);
 
