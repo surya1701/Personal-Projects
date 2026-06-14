@@ -111,7 +111,7 @@ startBtn.addEventListener("click", () => {
 
         showGallery();
 
-    }, 5000);
+    }, 60000);
 
 });
 
