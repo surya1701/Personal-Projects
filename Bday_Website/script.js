@@ -13,8 +13,6 @@ function shuffle(array) {
   return shuffled;
 }
 
-const INTRO_VIDEO_ID = "Ok6zzloDKiU";
-
 const videos = shuffle([
     "ze4m1Ymalf0",
     "Y2KAnkYQN_Q",
@@ -41,7 +39,9 @@ const videos = shuffle([
     "2Q_nZnyRI6I",
     "jbTCKMaKT64",
     "2_CmDKGSf_U",
-    "nvnuVFwNy40"
+    "nvnuVFwNy40",
+    "__u_UtPo13w",
+    "IM2-HCRM46U"
 ]);
 videos.push("dbq2PwrBf7k");
 
@@ -74,9 +74,9 @@ document
     .getElementById("closeIntroBtn")
     .addEventListener("click", () => {
 
-        introModal.hide();
+        introVideo.pause();
 
-        introFrame.src = "";
+        introModal.hide();
 
         showGallery();
     });
@@ -97,18 +97,17 @@ const startBtn =
 const gallerySection =
     document.getElementById("gallerySection");
 
-const introFrame =
-    document.getElementById("introVideo");
-
 const playerFrame =
     document.getElementById("playerFrame");
 
 startBtn.addEventListener("click", () => {
 
-    introFrame.src =
-        `https://www.youtube.com/embed/${INTRO_VIDEO_ID}?autoplay=1&rel=0`;
-
     introModal.show();
+
+    const introVideo =
+        document.getElementById("introVideo");
+
+    introVideo.play();
 
     // Approximate intro duration
     // Change this to match your compilation
@@ -116,12 +115,18 @@ startBtn.addEventListener("click", () => {
 
         introModal.hide();
 
-        introFrame.src = "";
-
         showGallery();
 
     }, 60000);
 
+});
+
+const introVideo =
+    document.getElementById("introVideo");
+
+introVideo.addEventListener("ended", () => {
+    introModal.hide();
+    showGallery();
 });
 
 const grid =
@@ -162,10 +167,4 @@ document
     .getElementById("videoModal")
     .addEventListener("hidden.bs.modal", () => {
         playerFrame.src = "";
-    });
-
-document
-    .getElementById("introVideoModal")
-    .addEventListener("hidden.bs.modal", () => {
-        introFrame.src = "";
     });
