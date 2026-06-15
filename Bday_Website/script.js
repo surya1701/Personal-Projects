@@ -13,7 +13,7 @@ function shuffle(array) {
   return shuffled;
 }
 
-const INTRO_VIDEO_ID = "EMvGromWfgA";
+const INTRO_VIDEO_ID = "XStvbSqKvag";
 
 const videos = shuffle([
     "ze4m1Ymalf0",
@@ -37,7 +37,8 @@ const videos = shuffle([
     "DjBwMPb-tGg",
     "b2mIpQ6GWwg",
     "_8w_xn9NkEo",
-    "-RMnQDU6f58"
+    "-RMnQDU6f58",
+    "2Q_nZnyRI6I"
 ]);
 videos.push("dbq2PwrBf7k");
 
