@@ -44,7 +44,8 @@ const videos = shuffle([
     "IM2-HCRM46U",
     "QuU5CJfwa94",
     "cxnc9cWWuGA",
-    "MKwcqEv-ecw"
+    "MKwcqEv-ecw",
+    "ZY9NQc7tKLI"
 ]);
 videos.push("dbq2PwrBf7k");
 
@@ -120,7 +121,7 @@ startBtn.addEventListener("click", () => {
 
         showGallery();
 
-    }, 90000);
+    }, 100000);
 
 });
 
