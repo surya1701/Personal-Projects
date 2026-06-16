@@ -120,7 +120,7 @@ startBtn.addEventListener("click", () => {
 
         showGallery();
 
-    }, 80000);
+    }, 90000);
 
 });
 
