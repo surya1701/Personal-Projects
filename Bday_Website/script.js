@@ -41,7 +41,9 @@ const videos = shuffle([
     "2_CmDKGSf_U",
     "nvnuVFwNy40",
     "__u_UtPo13w",
-    "IM2-HCRM46U"
+    "IM2-HCRM46U",
+    "QuU5CJfwa94",
+    "cxnc9cWWuGA"
 ]);
 videos.push("dbq2PwrBf7k");
 
